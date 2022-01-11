@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Chilemat Devoluciones</title>
 </head>
-<h1>Devoluciones Chilemat</h1>
-<body>
+<img src="descarga.png" alt="">
+<h1 class="ttitle">Devoluciones Chilemat</h1>
+<body class="bchile">
   <form enctype="text/plain" action="mailto:mfdiazgarrido@gmail.com?subject=Devolución%20a%20bodega" method="post">
     <div class="select">
       <select name="Nombre" id="format">
@@ -27,14 +28,15 @@
         <option value=" Producto dannado">Por producto dañado</option>
       </select>
     </div>
-    <h3>Gu&iacute;a de despacho</h3>
+    <h2>Gu&iacute;a de despacho</h2>
     <div class="contenedor">
       <input name="Num del documento de despacho" type="number"></input>
     </div>
-    <h3>Detalle de la devolución</h3>
+    <h2>Detalle de la devolución</h2>
     <div class="contenedor">
       <input name="Detalle" id="Producto" cols="30" rows="5"></input>
     </div>
+    <br>
     <button class="btn">Enviar</button>
   </form>
 </body>
