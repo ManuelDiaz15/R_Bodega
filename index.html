@@ -7,15 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Chilemat</title>
 </head>
-<h1>Producto Dañado</h1>
+<h1>Devoluciones Chilemat</h1>
 <body>
-  <form enctype="text/plain action="mailto:fuego9300@gmail.com?subject=Devolución%20en%20bodega%20por%20producto%20dañado" method="post"">
-    <nav>
-      <a href="index.html" class="links-nav">Producto Dañado</a>
-      <a href="e_cantidad.html" class="links-nav">Error en cantidad</a>
-      <a href="e_pedido.html" class="links-nav">Error en pedido</a>
-    </nav>
-
+  <form enctype="text/plain" action="mailto:fuego9300@gmail.com?subject=Devolución%20a%20bodega" method="post">
     <div class="select">
       <select name="Nombre" id="format">
         <option selected disabled>Selecciona tu nombre</option>
@@ -23,13 +17,23 @@
         <option value=" Pedro">Pedro</option>
       </select>
     </div>
+    <br>
+    <div class="select">
+      <select name="Tipo" id="format">
+        <option selected disabled>Selecciona el tipo de devolución</option>
+        <option value="Devolución por producto no solicitado">Por producto no solicitado</option>
+        <option value="Devolución por pedido duplicado">Por pedido duplicado</option>
+        <option value="Devolución por calidad de producto">Por calidad de producto </option>
+        <option value="Devolución por producto dañado">Por producto dañado</option>
+      </select>
+    </div>
     <h3>Gu&iacute;a de despacho</h3>
     <div class="contenedor">
-      <input type="number" name="Num de despacho" id="Despacho"></input>
+      <input name="Num de despacho" id="Despacho" cols="30" rows="2"></textarea>
     </div>
-    <h3>Producto</h3>
+    <h3>Detalle de la devolución</h3>
     <div class="contenedor">
-      <textarea name="Producto" id="Producto" cols="30" rows="5"></textarea>
+      <textarea name="Detalle" id="Producto" cols="30" rows="5"></textarea>
     </div>
     <button class="btn">Enviar</button>
   </form>
