@@ -13,8 +13,8 @@
 <body class="bchile">
   <form enctype="text/plain" target="_top" action="mailto:mfdiazgarrido@gmail.com?subject=Devolución%20a%20bodega" method="post"> 
     <div class="select">
-      <select name="Nombre" id="format">
-        <option selected disabled>Selecciona tu nombre</option>
+      <select name="Nombre" id="format" required>
+        <option value="">Selecciona tu nombre</option>
         <option value=" Esteban">Esteban</option>
         <option value=" Edison B.">Edison B.</option>
         <option value=" Guillermo">Guillermo</option>
@@ -31,7 +31,7 @@
     <br>
     <div class="select">
       <select name="Tipo" required>
-        <option selected disabled>Selecciona el tipo de devolución</option>
+        <option value="">Selecciona el tipo de devolución</option>
         <option value=" Producto no solicitado">Por producto no solicitado</option>
         <option value=" Pedido duplicado">Por pedido duplicado</option>
         <option value=" Calidad de producto">Por calidad de producto </option>
