@@ -22,7 +22,7 @@
     </div>
     <br>
     <div class="select">
-      <select name="Tipo">
+      <select name="Tipo" required>
         <option selected disabled>Selecciona el tipo de devolución</option>
         <option value=" Producto no solicitado">Por producto no solicitado</option>
         <option value=" Pedido duplicado">Por pedido duplicado</option>
@@ -32,11 +32,11 @@
     </div>
     <h2>Gu&iacute;a de despacho</h2>
     <div class="contenedor">
-      <input name="Num del documento de despacho" type="number" class="in"></input>
+      <input name="Num del documento de despacho" type="number" class="in" required="" pattern="[0-9]+" placeholder="Ingresa el número de guía aquí"></input>
     </div>
     <h2>Detalle de la devolución</h2>
     <div class="contenedor">
-      <textarea name="Detalle" id="Producto" cols="10" rows="3"  class="in"></textarea>
+      <textarea name="Detalle" id="Producto" cols="10" rows="3"  class="in" required="" placeholder="Ingresa el detalle de la Devoluión"></textarea>
     </div>
     <br>
     <button class="myButton">Enviar por Gmail</button>
