@@ -88,11 +88,10 @@
       margin-inline-start: -19px;
     }
   .in{
-    width: 50%;
+    width: 100%;
     background: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 4px;
-    margin-bottom: 16px;
     border: 1px solid #1f53c5;
     font-family: 'calibri';
     font-size: 14px;
@@ -156,7 +155,7 @@
       background: #5c6664;
     }
 
-@media (max-width: 480px)
+@media (max-width: 300px)
 {
   .links-nav{
     display: inline-block;
@@ -164,6 +163,17 @@
     color:rgb(0, 0, 0);
     padding: 10px 30px;
     text-decoration: none;
+  }
+  .in{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-right: 40px;
   }
   nav{
     background: #5c6664;
